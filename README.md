@@ -1,4 +1,4 @@
-# TuwaiqBank
+# Tuwaiq Bank
 A simple JavaFX-based GUI application for account creation, login authentication, and user dashboard display and Send Money Functionality
 
 ## 🧪 Technologies
