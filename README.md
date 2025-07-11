@@ -2,9 +2,13 @@ A simple JavaFX-based GUI application for account creation, login authentication
 
 ## 🧪 Technologies
 Java 11+
+
 JavaFX
+
 FXML for UI definition
+
 CSS for styling and theme
+
 Scene switching using JavaFX FXMLLoader
 
 ## 📌 Features
