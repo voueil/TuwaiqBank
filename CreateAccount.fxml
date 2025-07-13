@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/CreateAccount.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CreateAccountController">
+   <children>
+      <Label fx:id="createAccount" layoutX="82.0" layoutY="46.0" text="create account" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackbtn" text="back" />
+      <HBox layoutX="30.0" layoutY="112.0" prefHeight="27.0" prefWidth="229.0">
+         <children>
+            <Label fx:id="FullNameTXT" prefHeight="25.0" prefWidth="101.0" text="full name" />
+            <TextField fx:id="name" />
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="149.0" prefHeight="27.0" prefWidth="229.0">
+         <children>
+            <Label fx:id="username" prefHeight="25.0" prefWidth="101.0" text="username" />
+            <TextField fx:id="usernameText" />
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="188.0" prefHeight="27.0" prefWidth="229.0">
+         <children>
+            <Label fx:id="email" prefHeight="25.0" prefWidth="101.0" text="email" />
+            <TextField fx:id="emailText" />
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="225.0" prefHeight="27.0" prefWidth="229.0">
+         <children>
+            <Label fx:id="phoneNumber" prefHeight="25.0" prefWidth="101.0" text="phone number" />
+            <TextField fx:id="phoneNumberTXT" />
+         </children>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="266.0" prefHeight="27.0" prefWidth="229.0">
+         <children>
+            <Label fx:id="password" prefHeight="25.0" prefWidth="101.0" text="password" />
+            <PasswordField fx:id="passwordText" />
+         </children>
+      </HBox>
+      <CheckBox fx:id="agreement" layoutX="52.0" layoutY="307.0" mnemonicParsing="false" text="i agree on terms and condition" />
+      <Button fx:id="signup" layoutX="108.0" layoutY="339.0" mnemonicParsing="false" onAction="#handlesignupbtn" text="signup" />
+      <VBox fx:id="vboxContainer" layoutX="320.0" layoutY="4.0" prefHeight="398.0" prefWidth="278.0" />
+   </children>
+   <padding>
+      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </padding>
+</AnchorPane>
