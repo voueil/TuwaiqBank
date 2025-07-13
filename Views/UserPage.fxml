@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="600.0" stylesheets="@../Styles/UserPage.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserPageController">
+   <children>
+      <Label layoutX="27.0" layoutY="63.0" text="my accounts" />
+      <Label layoutX="24.0" layoutY="32.0" text="Hello, Dareen">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="71.0" text="account summary" />
+      <Label layoutX="27.0" layoutY="217.0" text="latest transactions" />
+      <Label layoutX="433.0" layoutY="209.0" prefHeight="18.0" prefWidth="77.0" text="send money" />
+      <ListView fx:id="listView" layoutX="24.0" layoutY="232.0" prefHeight="185.0" prefWidth="383.0" />
+      <VBox layoutX="433.0" layoutY="225.0" prefHeight="193.0" prefWidth="153.0">
+         <children>
+            <Label text="payee account:" />
+            <TextField fx:id="Payee" prefHeight="13.0" prefWidth="153.0" />
+            <Label text="amount in Riyal:" />
+            <TextField fx:id="MoneyAmount" prefHeight="18.0" prefWidth="153.0" />
+            <Label text="message (optional):" />
+            <TextArea fx:id="messageTxt" prefHeight="53.0" prefWidth="153.0" />
+            <Button fx:id="sendMoney" mnemonicParsing="false" onAction="#handleSendMoney" text="send money" />
+         </children></VBox>
+      <Button fx:id="signOut" layoutX="515.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleSignOut" text="sign out" />
+      <HBox layoutX="18.0" layoutY="84.0" prefHeight="107.0" prefWidth="160.0">
+         <children>
+            <AnchorPane prefHeight="107.0" prefWidth="178.0">
+               <children>
+                  <Label fx:id="currentAcountMoney" layoutX="20.0" layoutY="22.0" text="\$50860.97" />
+                  <Label layoutX="20.0" layoutY="54.0" text="**** **** **** 4564" />
+                  <Label layoutX="20.0" layoutY="84.0" text="current acount" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="433.0" layoutY="89.0" prefHeight="107.0" prefWidth="153.0">
+         <children>
+            <VBox prefHeight="107.0" prefWidth="35.0">
+               <children>
+                  <Label text="income" />
+                  <Label text="+ $3500.00" />
+                  <Label text="+ $865.50" />
+                  <Line endX="135.0" />
+                  <Label text="expenses" />
+                  <Label text="- $1245.89" />
+               </children>
+            </VBox>
+         </children></VBox>
+      <HBox layoutX="186.0" layoutY="84.0" prefHeight="107.0" prefWidth="160.0">
+         <children>
+            <AnchorPane prefHeight="107.0" prefWidth="178.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="22.0" text="\$875305.24" />
+                  <Label layoutX="20.0" layoutY="54.0" text="**** **** **** 2337" />
+                  <Label layoutX="20.0" layoutY="84.0" text="saving account" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
