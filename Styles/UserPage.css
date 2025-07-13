@@ -1,0 +1,92 @@
+/* Root background */
+#AnchorPane {
+    -fx-background-color: #FFFAF0;
+    -fx-padding: 15px;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #065f46;
+    -fx-font-size: 12px;
+}
+
+
+.label[text="Hello, Dareen"] {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #14532d;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px; 
+}
+
+.label[text="my accounts"],
+.label[text="account summary"],
+.label[text="latest transactions"],
+.label[text="send money"] {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #166534;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+HBox > AnchorPane {
+    -fx-background-color: white;
+    -fx-border-color: #a7f3d0;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 5, 0, 0, 1);
+}
+
+#currentAcountMoney,
+HBox > AnchorPane > .label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #064e3b;
+}
+
+.label[text~="\\*\\*\\*\\*"],
+.label[text="current account"],
+.label[text="saving account"] {
+    -fx-font-size: 11px;
+    -fx-text-fill: #15803d;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #a7f3d0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #064e3b;
+}
+
+.text-field,
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #a7f3d0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #064e3b;
+}
+
+.button {
+    -fx-background-color: #166534;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 14 6 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #15803d;
+}
+
+.line {
+    -fx-stroke: #cbd5e1;
+    -fx-stroke-width: 1.2;
+}

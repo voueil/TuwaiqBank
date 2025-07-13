@@ -1,0 +1,48 @@
+#AnchorPane {
+    -fx-background-color: #FFFAF0;
+}
+
+#title {
+    -fx-font-family: "Oliver";
+    -fx-text-fill:  #14532d;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+#username, #password, #CreateAccountQuestion {
+    -fx-text-fill:  #065f46;
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 180px;
+    -fx-background-color: white;
+    -fx-border-color: #a7f3d0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px;
+    -fx-text-fill: #064e3b;
+    -fx-font-size: 13px;
+    -fx-node-orientation: right-to-left;
+}
+
+.button {
+    -fx-background-color: #166534;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 10 20 10 20;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #15803d;
+}
+
+.line {
+    -fx-stroke: #cbd5e1;
+    -fx-stroke-width: 1.2;
+}
